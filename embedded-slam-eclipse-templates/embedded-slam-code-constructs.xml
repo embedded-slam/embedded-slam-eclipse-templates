@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><templates><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Assertion macro" enabled="true" name="assert">ASSERT((${the_valid_condition}),&#13;
+       "${enclosing_project}: ${message_to_the_user}!",&#13;
+       ${fileName},&#13;
+       ${lineNumber});</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="default multiline block comment" enabled="true" id="org.eclipse.cdt.ui.text.templates.c.comment" name="b">/*
+ * ${comment}.
+ */
+</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="default one-line comment" enabled="true" name="c">/*${comment}*/</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="case statement to be used with switch" enabled="true" name="case">case ${value}:&#13;
+    /*&lt;${description}&gt;*/&#13;
+    ${cursor};&#13;
+    break; /*&lt;${description}&gt;*/</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="do while statement" enabled="true" id="org.eclipse.cdt.ui.text.templates.c.do" name="do">do 
+{
+    /*&lt;${description}&gt;*/
+	${cursor};
+} while(${condition}); /*&lt;${description}&gt;*/</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="else block" enabled="true" id="org.eclipse.cdt.ui.text.templates.c.else" name="else">else 
+{
+    /*&lt;${description}&gt;*/
+	${cursor};
+} /*else: &lt;${description}&gt;*/</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="else if block" enabled="true" id="org.eclipse.cdt.ui.text.templates.c.elseif" name="elseif">else if(${condition}) 
+{
+    /*&lt;${description}&gt;*/
+	${cursor};
+} /*else if: &lt;${description}&gt;*/</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="enumeration definition" enabled="true" name="enum">/***************************************************************************************************&#13;
+ * Enumeration Name:&#13;
+ * ${enum_name}_e&#13;
+ *&#13;
+ * Enumeration Description:&#13;
+ * ${enum_description}.&#13;
+ **************************************************************************************************/&#13;
+typedef enum ${enum_name}&#13;
+{&#13;
+    /*${member_comment}*/&#13;
+    ${ENUMERATED_NAME} = ${value},&#13;
+} ${enum_name}_e;</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Fixme comment" enabled="true" name="fixme">/*&#13;
+ * FIXME: ${user} on ${date}&#13;
+ * &#13;
+ * ${comment}.&#13;
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Used when a FIXME is fixed." enabled="true" name="fixme_fixed">/*&#13;
+ * FIXED: ${user} on ${date}&#13;
+ * &#13;
+ * ${comment}.&#13;
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="for loop" enabled="true" id="org.eclipse.cdt.ui.text.templates.c.for" name="for">for(${var} = 0; ${var} &lt; ${max}; ++${var}) 
+{
+    /*&lt;${description}&gt;*/
+	${cursor}
+} /*for: &lt;${description}&gt;*/</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="function declaration" enabled="true" name="function_declaration">/***************************************************************************************************&#13;
+ *  Name        : ${function_name}&#13;
+ *&#13;
+ *  Arguments   : ${arg_list}&#13;
+ *&#13;
+ *  Description : ${description}.&#13;
+ *&#13;
+ *  Returns     : ${return_type}.&#13;
+ **************************************************************************************************/&#13;
+${return_type} ${function_name}(${arg_list});</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="function definition" enabled="true" name="function_definition">${return_type} ${function_name}(${arg_list})&#13;
+{&#13;
+    ${cursor};&#13;
+} /*function: ${function_name}*/</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Coding hint template" enabled="true" name="hint_coding">/* HINT: [CODING]&#13;
+ **********************************************************************************************&#13;
+ *&#13;
+ * ${comment}.&#13;
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Design hint template" enabled="true" name="hint_design">/* HINT: [DESIGN]&#13;
+ **********************************************************************************************&#13;
+ *&#13;
+ * ${comment}.&#13;
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Testing hint template" enabled="true" name="hint_test">/* HINT: [TEST]&#13;
+ **********************************************************************************************&#13;
+ *&#13;
+ * ${comment}.&#13;
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="if statement" enabled="true" id="org.eclipse.cdt.ui.text.templates.c.if" name="if">if(${condition}) 
+{
+    /*&lt;${description}&gt;*/
+	${cursor};
+} /*if: &lt;${description}&gt;*/</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="if else statement" enabled="true" id="org.eclipse.cdt.ui.text.templates.c.ifelse" name="ifelse">if(${condition}) 
+{
+    /*&lt;${if_description}&gt;*/
+	${cursor};
+} /*if: &lt;${if_description}&gt;*/
+else 
+{
+    /*&lt;${else_description}&gt;*/
+	${cursor};
+} /*else: &lt;${else_description}&gt;*/</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Macro constants" enabled="true" name="macro_constant">/*${comment}*/&#13;
+#define ${MACRO_NAME}(${macro_value})</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Function like macros (multi line)" enabled="true" name="macro_function_like_multi_line">/***************************************************************************************************&#13;
+ *  Macro Name  : ${MACRO_NAME}&#13;
+ *&#13;
+ *  Arguments   : ${arg_list}&#13;
+ *&#13;
+ *  Description : ${description}.&#13;
+ *&#13;
+ *  Returns     : ${return_type}.&#13;
+ **************************************************************************************************/&#13;
+#define ${MACRO_NAME}(${arg_list})                                                                 \&#13;
+{                                                                                                  \&#13;
+    ${cursor};                                                                                     &#13;
+}                                                                                                  \&#13;
+</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Function like macros (single line only)" enabled="true" name="macro_function_like_single_line">/***************************************************************************************************&#13;
+ *  Macro Name  : ${MACRO_NAME}&#13;
+ *&#13;
+ *  Arguments   : ${arg_list}&#13;
+ *&#13;
+ *  Description : ${description}.&#13;
+ *&#13;
+ *  Returns     : ${return_type}.&#13;
+ **************************************************************************************************/&#13;
+#define ${MACRO_NAME}(${arg_list}) (${macro_body_one_line_only})</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Review action point comment, used by the code reviewer" enabled="true" name="review">/*&#13;
+ * RAP: ${user} on ${date}&#13;
+ * &#13;
+ * ${comment}.&#13;
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Used when review action point comment is applied" enabled="true" name="review_applied">/*&#13;
+ * APPLIED: ${user} on ${date}&#13;
+ * &#13;
+ * ${comment}.&#13;
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="structure definition" enabled="true" name="structure">/***************************************************************************************************&#13;
+ * Structure Name:&#13;
+ * ${structure_name}_s&#13;
+ *&#13;
+ * Structure Description:&#13;
+ * ${structure_description}.&#13;
+ **************************************************************************************************/&#13;
+typedef struct ${structure_name}&#13;
+{&#13;
+    /*${member_comment}*/&#13;
+    ${member_type} ${member_name};&#13;
+} ${structure_name}_s;</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="switch case statement" enabled="true" id="org.eclipse.cdt.ui.text.templates.c.switch" name="switch">switch(${key}) 
+{
+    /*&lt;${switch_description}&gt;*/
+    
+	case ${value}:
+	    /*&lt;${case_description}&gt;*/
+		${cursor}
+		break;/*&lt;${case_description}&gt;*/
+	default:
+	    /*&lt;${default_description}&gt;*/
+	    ${cursor}
+		break;/*&lt;${default_description}&gt;*/
+} /*switch: &lt;${switch_description}&gt;*/</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Todo comment" enabled="true" name="todo">/*&#13;
+ * TODO: ${user} on ${date}&#13;
+ * &#13;
+ * ${comment}.&#13;
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="Used once a TODO is done" enabled="true" name="todo_done">/*&#13;
+ * DONE: ${user} on ${date}&#13;
+ * &#13;
+ * ${comment}.&#13;
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.templates.c" deleted="false" description="union definition" enabled="true" name="union">/***************************************************************************************************&#13;
+ * Union Name:&#13;
+ * ${union_name}_u&#13;
+ *&#13;
+ * Union Description:&#13;
+ * ${union_description}.&#13;
+ **************************************************************************************************/&#13;
+typedef union ${union_name}&#13;
+{&#13;
+    /*${member_comment}*/&#13;
+    ${member_type} ${member_name};&#13;
+} ${union_name}_u;</template></templates>

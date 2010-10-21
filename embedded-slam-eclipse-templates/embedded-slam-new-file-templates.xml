@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><templates><template autoinsert="true" context="org.eclipse.cdt.ui.text.codetemplates.constructorcomment_context" deleted="false" description="Comment for created constructors" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.constructorcomment" name="constructorcomment">/*
+ *
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.codetemplates.destructorcomment_context" deleted="false" description="Comment for created destructors" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.destructorcomment" name="destructorcomment">/*
+ *
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.codetemplates.filecomment_context" deleted="false" description="Comment for created C/C++ files" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.filecomment" name="filecomment">/*
+ * ${file_name}
+ *
+ *  Created on: ${date}
+ *      Author: ${user}
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.codetemplates.typecomment_context" deleted="false" description="Comment for created classes" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.typecomment" name="typecomment">/*
+ *
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.codetemplates.fieldcomment_context" deleted="false" description="Comment for fields" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.fieldcomment" name="fieldcomment">/*
+ *
+ */</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.codetemplates.methodcomment_context" deleted="false" description="Comment for methods" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.methodcomment" name="methodcomment">/*
+ *
+ */</template><template autoinsert="true" context="org.eclipse.cdt.core.cxxSource.contenttype_context" deleted="false" description="Default template for newly created C++ source files" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.cppsourcefile" name="Default C++ source template">${filecomment}
+
+${declarations}</template><template autoinsert="true" context="org.eclipse.cdt.core.cxxHeader.contenttype_context" deleted="false" description="Default template for newly created C++ header files" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.cppheaderfile" name="Default C++ header template">${filecomment}
+
+#ifndef ${include_guard_symbol}
+#define ${include_guard_symbol}
+
+${typecomment}
+${declarations}
+
+#endif /* ${include_guard_symbol} */
+</template><template autoinsert="false" context="org.eclipse.cdt.core.cSource.contenttype_context" deleted="false" description="Default template for newly created C source files" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.csourcefile" name="Default C source template">/***************************************************************************************************
+ *
+ * ${project_name} - one_liner_project_description.
+ *
+ * Copyright © 2009  comma_separated_copy_right_holder_list.
+ *
+ ***************************************************************************************************
+ *
+ * This file is part of ${project_name} library.
+ *
+ * ${project_name} is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU &lt;Lesser &gt;General Public License as published by the Free Software
+ * Foundation, either version 3 of the License, or any later version.
+ *
+ * ${project_name} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU &lt;Lesser &gt;General Public License for more details.
+ *
+ * You should have received a copy of the GNU &lt;Lesser &gt;General Public License along
+ * with ${project_name}. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ *
+ ***************************************************************************************************
+ *
+ * For more information, questions, or inquiries please contact:
+ *
+ * author_name: author_email
+ *
+ **************************************************************************************************/
+
+
+
+
+
+
+/***************************************************************************************************
+ *
+ *  I N C L U D E S
+ *
+ **************************************************************************************************/
+
+
+/***************************************************************************************************
+ *
+ *  M A C R O S
+ *
+ **************************************************************************************************/
+
+
+/***************************************************************************************************
+ *
+ *  T Y P E S
+ *
+ **************************************************************************************************/
+
+
+/***************************************************************************************************
+ *
+ *  I N T E R N A L   F U N C T I O N   D E C L A R A T I O N S
+ *
+ **************************************************************************************************/
+
+
+/***************************************************************************************************
+ *
+ *  I N T E R F A C E   F U N C T I O N   D E F I N I T I O N S
+ *
+ **************************************************************************************************/
+
+/***************************************************************************************************
+ *
+ *  I N T E R N A L   F U N C T I O N   D E F I N I T I O N S
+ *
+ **************************************************************************************************/</template><template autoinsert="false" context="org.eclipse.cdt.core.cHeader.contenttype_context" deleted="false" description="Default template for newly created C header files" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.cheaderfile" name="Default C header template">/***************************************************************************************************
+ *
+ * ${project_name} - one_liner_project_description.
+ *
+ * Copyright © 2009  comma_separated_copy_right_holder_list.
+ *
+ ***************************************************************************************************
+ *
+ * This file is part of ${project_name} library.
+ *
+ * ${project_name} is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU &lt;Lesser &gt;General Public License as published by the Free Software
+ * Foundation, either version 3 of the License, or any later version.
+ *
+ * ${project_name} is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU &lt;Lesser &gt;General Public License for more details.
+ *
+ * You should have received a copy of the GNU &lt;Lesser &gt;General Public License along
+ * with ${project_name}. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ *
+ ***************************************************************************************************
+ *
+ * For more information, questions, or inquiries please contact:
+ *
+ * author_name: author_email
+ *
+ **************************************************************************************************/
+#ifndef ${include_guard_symbol}
+#define ${include_guard_symbol}
+
+
+/***************************************************************************************************
+ *
+ *  M A C R O S
+ *
+ **************************************************************************************************/
+
+
+/***************************************************************************************************
+ *
+ *  T Y P E S
+ *
+ **************************************************************************************************/
+
+
+/***************************************************************************************************
+ *
+ *  I N T E R F A C E   F U N C T I O N   D E C L A R A T I O N S
+ *
+ **************************************************************************************************/
+
+
+#endif /* ${include_guard_symbol} */
+</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.codetemplates.methodbody_context" deleted="false" description="Code in created method stubs" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.methodbody" name="methodbody">// ${todo} Auto-generated method stub
+${body_statement}</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.codetemplates.constructorbody_context" deleted="false" description="Code in created constructor stubs" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.constructorbody" name="constructorbody">// ${todo} Auto-generated constructor stub
+${body_statement}</template><template autoinsert="true" context="org.eclipse.cdt.ui.text.codetemplates.destructorbody_context" deleted="false" description="Code in created destructor stubs" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.destructorbody" name="destructorbody">${body_statement}
+// ${todo} Auto-generated destructor stub</template><template autoinsert="true" context="org.eclipse.cdt.core.asmSource.contenttype_context" deleted="false" description="Default template for newly created assembly files" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.asmsourcefile" name="Default assembly template">${filecomment}
+</template><template autoinsert="true" context="org.eclipse.core.runtime.text.contenttype_context" deleted="false" description="Default template for newly created text files" enabled="true" id="org.eclipse.cdt.ui.text.codetemplates.textfile" name="Default text file template">${file_name}
+
+ Created on: ${date}
+     Author: ${user}
+
+</template></templates>
